@@ -26,7 +26,7 @@ support/en/index.html support (en)
 assets/               style.css, icon.png, favicon.png, apple-touch-icon.png
 ```
 
-All internal links are relative, so the site works under the `/cerkya-remote-legal/` project path. The privacy policy must stay consistent with the app's behavior (no tracking, support-form fields, email delivery to soporte@cerkya.com, 12-month retention).
+All internal links are relative, so the site works under the `/cerkya-remote-legal/` project path. The privacy policy must stay consistent with the app's behavior (no tracking, support-form fields, delivery over HTTPS to support.cerkya.com (Cloudflare) with email fallback to soporte@cerkya.com, 12-month retention).
 
 ## Preview
 
