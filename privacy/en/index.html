@@ -29,7 +29,7 @@
 <li>A diagnostics log file (<code>cerkya-remote.log</code>, at most about 256 KB, oldest lines are dropped). It records app launch (app version, iOS version, device model), scan start and end, TVs and unsupported devices found (name, brand, model, API version), failed commands (which key or app, and the error type) and connection changes. It does not record every button press, and the host part of home-network IP addresses is hidden (for example 192.168.1.x). TV names are shown as the TV reports them, so a name you gave your TV may appear in the log.</li></ul>
 <p>You can export or clear the log at any time in Settings. Deleting the app removes it.</p>
 <h2>Data we receive: only the support form</h2>
-<p>If you tap &ldquo;Request support for my TV&rdquo; and then Send, the app sends one request over HTTPS to our support service. It contains exactly these fields:</p>
+<p>If you tap &ldquo;Request support for my TV&rdquo; and then Send, the app opens your own Mail app with a message addressed to soporte@cerkya.com. You see the message and can edit or cancel it before sending; nothing reaches us unless you send it from Mail. The message and its attachments contain exactly these fields:</p>
 <ul>
 <li>app version and build, iOS version, device model identifier, language/locale and region code</li>
 <li>the TV brand and model you entered</li>
@@ -38,7 +38,7 @@
 <li>the list of other TVs the app detected on your network (brand, model, name and the technical signals that identified them, without IP addresses)</li>
 <li>the diagnostics log (only if &ldquo;Attach diagnostics log&rdquo; is on; it is on by default and you can turn it off)</li>
 <li>the time of the request</li></ul>
-<p>The form has a &ldquo;Preview what will be sent&rdquo; section that shows the exact data before you send it. If sending is not available, or fails, you can instead share the same data yourself by email through the iOS share sheet.</p>
+<p>The form has a &ldquo;Preview what will be sent&rdquo; section that shows the exact data before you send it. If Mail is not set up on your iPhone, the app shows our address so you can copy it, a button that opens your default email app with the message text (attach the files yourself), and the iOS share sheet with the same files. The message is received in the mailbox soporte@cerkya.com, which is stored by our email provider.</p>
 <h2>How we use it</h2>
 <p>Only to understand which TVs people want supported, to fix problems, and to reply if you gave an email address. We do not sell or share it, and we do not use it for advertising or tracking.</p>
 <h2>Retention</h2>
@@ -49,7 +49,7 @@
 <h2>Children</h2>
 <p>The app is not directed at children and we do not knowingly collect personal information from children. The only free-text fields are the optional email and notes in the support form.</p>
 <h2>Security</h2>
-<p>Support requests are sent over HTTPS. The app talks to your TV over your local network using the TV&rsquo;s own (unencrypted) local control interface, which is why the app asks for Local Network access.</p>
+<p>Support requests travel as an ordinary email, sent by your Mail app to our email provider. The app talks to your TV over your local network using the TV&rsquo;s own (unencrypted) local control interface, which is why the app asks for Local Network access.</p>
 <h2>Changes</h2>
 <p>If this policy changes, we will update the date above and, for significant changes, mention it in the app&rsquo;s release notes.</p>
 <h2>Contact</h2>

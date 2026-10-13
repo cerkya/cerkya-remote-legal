@@ -29,7 +29,7 @@
 <li>Un archivo de registro de diagnóstico (<code>cerkya-remote.log</code>, de unos 256 KB como máximo; se descartan las líneas más antiguas). Registra el inicio de la app (versión de la app, versión de iOS, modelo del dispositivo), el inicio y el fin de las búsquedas, los TVs y dispositivos no compatibles encontrados (nombre, marca, modelo, versión de API), los comandos fallidos (qué tecla o app, y el tipo de error) y los cambios de conexión. No registra cada pulsación de botón, y la parte del host de las direcciones IP de la red doméstica se oculta (por ejemplo, 192.168.1.x). Los nombres de los TVs se muestran tal como los reporta el TV, por lo que el nombre que le hayas puesto a tu TV puede aparecer en el registro.</li></ul>
 <p>Puedes exportar o borrar el registro en cualquier momento en Ajustes. Al eliminar la app, también se elimina el registro.</p>
 <h2>Datos que recibimos: solo el formulario de soporte</h2>
-<p>Si tocas &ldquo;Solicitar compatibilidad para mi TV&rdquo; y luego Enviar, la app envía una solicitud por HTTPS a nuestro servicio de soporte. Contiene exactamente estos campos:</p>
+<p>Si tocas &ldquo;Solicitar compatibilidad para mi TV&rdquo; y luego Enviar, la app abre tu propia app Mail con un mensaje dirigido a soporte@cerkya.com. Ves el mensaje y puedes editarlo o cancelarlo antes de enviarlo; no nos llega nada a menos que lo envíes desde Mail. El mensaje y sus adjuntos contienen exactamente estos campos:</p>
 <ul>
 <li>versión y compilación de la app, versión de iOS, identificador del modelo del dispositivo, idioma/configuración regional y código de región</li>
 <li>la marca y el modelo del TV que ingresaste</li>
@@ -38,7 +38,7 @@
 <li>la lista de otros TVs que la app detectó en tu red (marca, modelo, nombre y las señales técnicas que los identificaron, sin direcciones IP)</li>
 <li>el registro de diagnóstico (solo si &ldquo;Adjuntar registro de diagnóstico&rdquo; está activado; viene activado por defecto y puedes desactivarlo)</li>
 <li>la hora de la solicitud</li></ul>
-<p>El formulario tiene una sección &ldquo;Vista previa de lo que se enviará&rdquo; que muestra los datos exactos antes de enviarlos. Si el envío no está disponible o falla, puedes compartir tú mismo los mismos datos por correo electrónico mediante la hoja de compartir de iOS.</p>
+<p>El formulario tiene una sección &ldquo;Vista previa de lo que se enviará&rdquo; que muestra los datos exactos antes de enviarlos. Si Mail no está configurado en tu iPhone, la app muestra nuestra dirección para que la copies, un botón que abre tu app de correo predeterminada con el texto del mensaje (adjunta los archivos tú mismo) y la hoja de compartir de iOS con los mismos archivos. El mensaje se recibe en el buzón soporte@cerkya.com, que almacena nuestro proveedor de correo electrónico.</p>
 <h2>Cómo los usamos</h2>
 <p>Solo para entender qué TVs quiere la gente que sean compatibles, para corregir problemas y para responderte si indicaste un correo electrónico. No vendemos ni compartimos estos datos, y no los usamos para publicidad ni rastreo.</p>
 <h2>Conservación</h2>
@@ -49,7 +49,7 @@
 <h2>Menores de edad</h2>
 <p>La app no está dirigida a menores de edad y no recopilamos a sabiendas información personal de menores. Los únicos campos de texto libre son el correo electrónico y las notas opcionales del formulario de soporte.</p>
 <h2>Seguridad</h2>
-<p>Las solicitudes de soporte se envían por HTTPS. La app se comunica con tu TV a través de tu red local usando la interfaz de control local del propio TV (sin cifrar), y por eso la app pide acceso a la Red local.</p>
+<p>Las solicitudes de soporte viajan como un correo electrónico común, enviado por tu app Mail a nuestro proveedor de correo. La app se comunica con tu TV a través de tu red local usando la interfaz de control local del propio TV (sin cifrar), y por eso la app pide acceso a la Red local.</p>
 <h2>Cambios</h2>
 <p>Si esta política cambia, actualizaremos la fecha de arriba y, en caso de cambios importantes, lo mencionaremos en las notas de la versión de la app.</p>
 <h2>Contacto</h2>
